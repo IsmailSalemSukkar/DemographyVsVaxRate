@@ -161,10 +161,10 @@ emmeans(fitDemo,~Demographic_category,type="response")
 ggplot(data=vaxDataAnalysis,aes(x=Demographic_category,y=censusPerc))+
   geom_boxplot(aes(fill=Demographic_category)) + 
   scale_fill_viridis(discrete=T, option="turbo",begin = .25,end=.75) +
-  coord_cartesian(ylim = c(-0.5, 0.5)) + xlab("Demographic Category") + 
+  xlab("Demographic Category") + 
   ylab("Vaccine % / Census % - 1") + 
   ggtitle("Vaccination Rates of Different Demographic Groups",
-          "Black underperforms by ~33%, Native American underperforms by ~22%")
+          "Black underperforms by ~32%, Native American underperforms by ~23%")
 
 ggsave("demoVsVaxRate.png",width = 1920, height = 1080,units="px")
 
