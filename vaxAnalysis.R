@@ -165,6 +165,9 @@ ggplot(data=vaxDataAnalysis,aes(x=Demographic_category,y=censusPerc))+
   ylab("Vaccine % / Census % - 1") + 
   ggtitle("Vaccination Rates of Different Demographic Groups",
           "Black underperforms by ~33%, Native American underperforms by ~22%")
+
+ggsave("demoVsVaxRate.png",width = 1920, height = 1080,units="px")
+
 #We can see that black americans have the lowest perfomance when it comes 
 #to getting vaccinated, with Native Americans coming in an a close second,
 #while asian american have the strongest performance 
