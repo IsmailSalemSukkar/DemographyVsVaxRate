@@ -21,10 +21,10 @@ CensusPercWhite <- 59.3
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 #run the following ONCE 
-#vaxData <- read.csv("https://data.cdc.gov/api/views/km4m-vcsb/rows.csv?accessType=DOWNLOAD")
+vaxData <- read.csv("https://data.cdc.gov/api/views/km4m-vcsb/rows.csv?accessType=DOWNLOAD")
 
-#write.csv(vaxData, "vaxData.csv")
-
+write.csv(vaxData, "vaxData.csv")
+######Continue from here if not first time running script###
 vaxData <- read.csv("vaxData.csv") 
 vaxData<- vaxData[2:26]
 
